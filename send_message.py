@@ -13,7 +13,7 @@ def get_cli_args():
     parser.add('--server', required=True, help='a server to connect to chat',
                env_var='SERVER_PATH')
     parser.add('--port', required=True, help='a port to connect to chat',
-               env_var='SERVER_PORT')
+               env_var='WRITING_PORT')
     parser.add('--msg', help='msg to send to chat')
     parser.add('--token', required=True, help='a server to connect to chat',
                env_var='TOKEN')
