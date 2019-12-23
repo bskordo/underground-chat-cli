@@ -21,7 +21,7 @@ async def write_msg_into_file(received_msg):
     chat_msg = received_msg.decode()
     msg_with_data = '[{}]: {}'.format(current_time, chat_msg)
     async with AIOFile("history_msg.txt", 'a') as file_for_writing:
-                await file_for_writing.write(msg_with_data)
+        await file_for_writing.write(msg_with_data)
 
 
 async def read_msg():
