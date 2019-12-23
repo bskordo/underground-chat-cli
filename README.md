@@ -22,7 +22,7 @@ optional arguments:
   --port PORT           a port to connect to chat [env var: WRITING_PORT]
   --msg MSG             msg to send to chat
 ```
-
+### Set up enviroment variables
 ```bash
 export SERVER_PATH='server address'
 export READING_PORT='port'
@@ -30,20 +30,13 @@ export TOKEN='user token'
 export WRITING_PORT='port'
 ```
 
-## How to run
+## How to run the scripts and sample output
 
 ```bash
-python read_message.py
-python send_message.py --msg 'user_msg' --user_name 'user_name'
-```
-## Sample output when user read msg from server in case user send msg like "Hello"
-```bash
+python send_message.py --msg 'Hello'
 python read_message.py
 Eva: Поэтому ты ошибаешься.
 Vlad: Прекрати это.
 Eva: ОК, пока.
 Hopeful : Hello
 ```
-
-
-
